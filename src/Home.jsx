@@ -87,7 +87,7 @@ export default function Home() {
         {/* About Section */}
         <section className="mb-12">
           <div className="bg-white/90 backdrop-blur-md shadow-xl rounded-2xl p-6 border border-sky-200 text-center">
-            <p className="mb-3 font-bold">Hello, I'm Neuronecia.</p>
+            <p className="mb-3 font-bold">Hi! I'm Neuronecia.</p>
             <p className="mb-3">
               I play video games, mainly{" "}
               <span className="text-pink-600">osu!</span> and{" "}
@@ -95,7 +95,7 @@ export default function Home() {
             </p>
             <p className="text-gray-800">
               This website is particularly for my skin and <code>.cfg</code> but
-              idk I'll probably add something here sometime in the future.
+              I'll probably add something random here that's related to my work.
             </p>
 
             {/* My Skin Button */}
