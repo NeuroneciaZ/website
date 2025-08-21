@@ -105,7 +105,7 @@ export default function Home() {
               <span className="text-gray-700">CS</span>.
             </p>
             <p className="text-gray-800">
-              This website is particularly for my skin and <code>.cfg</code> but
+              This website is particularly for my skin and cfg but
               I'll probably add something random here that's related to my work.
             </p>
 
