@@ -1,6 +1,6 @@
 import React from "react";
 import { Monitor, Keyboard, Mouse, Headphones, Tablet } from "lucide-react";
-import { FaSteam } from "react-icons/fa"; // ✅ Steam icon
+import { FaSteam, FaInstagram } from "react-icons/fa"; // ✅ Steam + Instagram
 
 export default function Home() {
   return (
@@ -79,6 +79,17 @@ export default function Home() {
           >
             <FaSteam size={22} className="text-gray-800" />
           </a>
+
+          {/* Instagram */}
+          <a
+            href="https://www.instagram.com/bennyjnd"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-full hover:bg-pink-200 transition-transform transform hover:scale-105 flex items-center justify-center"
+            aria-label="Instagram profile"
+          >
+            <FaInstagram size={22} className="text-pink-600" />
+          </a>
         </div>
       </header>
 
@@ -132,7 +143,8 @@ export default function Home() {
                 Zero XSoft
               </li>
               <li className="flex items-center gap-3">
-                <Headphones className="text-sky-600" size={20} /> Earphone: Shure SE215
+                <Headphones className="text-sky-600" size={20} /> Earphone:
+                Shure SE215
               </li>
               <li className="flex items-center gap-3">
                 <Tablet className="text-sky-600" size={20} /> Tablet: Wacom
@@ -159,3 +171,4 @@ export default function Home() {
     </div>
   );
 }
+
