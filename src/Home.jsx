@@ -1,5 +1,6 @@
 import React from "react";
 import { Monitor, Keyboard, Mouse, Headphones, Tablet } from "lucide-react";
+import { FaSteam } from "react-icons/fa"; // ✅ Import Steam icon
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <header className="p-6 border-b bg-white/70 backdrop-blur-sm shadow-sm flex items-center justify-between">
         <h1 className="text-2xl font-bold text-sky-800">Balls</h1>
         <div className="flex items-center gap-3">
+          {/* Twitter */}
           <a
             href="https://x.com/bydexn"
             target="_blank"
@@ -26,6 +28,7 @@ export default function Home() {
             </svg>
           </a>
 
+          {/* osu! */}
           <a
             href="https://osu.ppy.sh/users/11648779"
             target="_blank"
@@ -38,59 +41,16 @@ export default function Home() {
               <text x="50%" y="57%" textAnchor="middle" fontSize="180" fill="white" fontFamily="Arial, Helvetica, sans-serif">osu!</text>
             </svg>
           </a>
+
+          {/* Steam */}
+          <a
+            href="https://steamcommunity.com/profiles/76561198183992165/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-full hover:bg-gray-200 transition-transform transform hover:scale-105 flex items-center justify-center"
+            aria-label="Steam profile"
+          >
+            <FaSteam size={22} className="text-gray-800" />
+          </a>
         </div>
       </header>
-
-      {/* Main Section */}
-      <main className="max-w-3xl mx-auto p-6 w-full">
-        {/* About Section */}
-        <section className="mb-12">
-          <div className="bg-white/90 backdrop-blur-md shadow-xl rounded-2xl p-6 border border-sky-200 text-center">
-            <p className="mb-3 font-bold">Hello, I'm Neuronecia.</p>
-            <p className="mb-3">I play video games, mainly <span className="text-pink-600">osu!</span> and <span className="text-gray-700">CS</span>.</p>
-            <p className="text-gray-800">This website is particularly for my skin and <code>.cfg</code> but idk I'll probably add something here sometime in the future.</p>
-
-            {/* My Skin Button */}
-            <a
-              href="https://drive.google.com/file/d/1KQ2MGleaj8r6ZYktEygrjfaI45cfdFDe/view?usp=drive_link"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block mt-6 px-5 py-2 border-2 border-sky-500 text-sky-700 font-medium rounded-lg hover:bg-sky-100 transition mb-2"
-            >
-              My Skin
-            </a>
-          </div>
-        </section>
-
-        {/* Setup Section */}
-        <section className="mb-12">
-          <h2 className="text-xl font-semibold mb-4 text-sky-800">Setup</h2>
-          <div className="bg-white/90 backdrop-blur-md shadow-xl rounded-2xl p-6 border border-sky-200">
-            <ul className="space-y-4 text-gray-800">
-              <li className="flex items-center gap-3"><Monitor className="text-sky-600" size={20}/> Monitor: Viewsonic XG2401</li>
-              <li className="flex items-center gap-3"><Keyboard className="text-sky-600" size={20}/> Keyboard: Leopold FC980M Cherry MX Black</li>
-              <li className="flex items-center gap-3"><Mouse className="text-sky-600" size={20}/> Mouse: Lamzu Maya 4K</li>
-              <li className="flex items-center gap-3"><Mouse className="text-sky-600" size={20}/> Mousepad: Artisan Zero XSoft</li>
-              <li className="flex items-center gap-3"><Headphones className="text-sky-600" size={20}/> Earphone: Shure SE215</li>
-              <li className="flex items-center gap-3"><Tablet className="text-sky-600" size={20}/> Tablet: Wacom CTL-472</li>
-            </ul>
-          </div>
-        </section>
-
-        {/* Full Width Cat Image */}
-        <section className="mb-12">
-          <img
-            src="https://media.tenor.com/goY0VJNhQSIAAAAe/bleh-bleh-cat.png"
-            alt="Cat Meme"
-            className="w-full h-auto rounded-none shadow-xl"
-          />
-        </section>
-      </main>
-
-      {/* Footer */}
-      <footer className="p-6 text-center text-sm text-sky-800 border-t border-sky-300 bg-white/70 backdrop-blur-sm">
-        &copy; 2025 Neuronecia, All rights reserved.
-      </footer>
-    </div>
-  );
-}
